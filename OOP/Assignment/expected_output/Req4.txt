@@ -1,0 +1,3 @@
+100009,Lisa Wilson,Female,01/12/1997,765 Elm St,8123456,Adult,100.0
+100007,Alice Lee,Female,20/04/2000,321 Maple Blvd,4567890,Adult,100.0
+100008,John Lech,Male,30/06/1991,876 Oak St,8901234,Adult,100.0

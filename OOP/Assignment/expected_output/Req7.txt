@@ -1,0 +1,5 @@
+3,550.0,Clothing
+8,150.0,Clothing
+14,60.0,Clothing
+16,225.0,Food
+17,123.0,Clothing
