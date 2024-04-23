@@ -1,0 +1,24 @@
+Full name : Pham Van Phuc
+Student's ID : 522H0068
+
+Brief explanation of my project : 
+    This is the index.html and about.html interface of a travel booking website. 
+    The index.html section is the home page section that represents the basic content of the website. 
+    About.html section and information about the developer of this website.
+
+Project structure:
+    File index.html contains the source code for the website's home page
+    File about.htmlcontains the source code for the website's about page
+    Folder js contains the myscript.js file that performs website operations
+    Folder assets contains css files to increase the beauty of html pages, image files used for the website
+
+Technologies used : 
+    This website is made by HTML, CSS and Javascript. 
+    Using the Bootstrap library, fonts provided by Google and icons provided by Fontawesome 4.
+
+Steps to run the project :
+    Make sure your device has an internet connection to use fonts, libraries and icons.
+    Extract the zip file and place it in the same folder.
+    Open the index.html file with Visual Studo Code.
+    Make sure the path to the image files is correct. The html file is connected to all css and js files.
+    Run the index.html file using Live Server

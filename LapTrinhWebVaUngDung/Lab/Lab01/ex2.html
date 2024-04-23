@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+    <style>
+        table tr th a {
+            text-decoration:none;
+            color: blue;
+        }
+        table {
+            text-align: left;
+            border: 2px grey solid;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="https://web-503073-wiolshzi6q-uc.a.run.app/lab01/login">
+        <table>
+            <tr>
+                <th>Email</th>
+                <th>
+                    <input type="email" name="email"  placeholder="email@domain.com">
+                </th>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <th>
+                    <input type="password" name="password" id="" placeholder="">
+                </th>
+            </tr>
+            <tr>
+                <th>Remember me</th>
+                <th>
+                    <input type="checkbox" name="" id="">
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    <input type="submit" value="Login">
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    Not registered <a href="/regestered">Create an account</a>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    Forgot your password?  <a href="/forgot_password">Click here to reset</a>
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
