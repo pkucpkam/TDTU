@@ -1,0 +1,165 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+form {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 60%;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+/* CSS cho modal */
+.modal {
+    display: none;
+    /* Ẩn modal mặc định */
+    position: fixed;
+    /* Cố định vị trí */
+    z-index: 1;
+    /* Đặt modal trên tất cả các phần khác */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Chiều rộng toàn màn hình */
+    height: 100%;
+    /* Chiều cao toàn màn hình */
+    overflow: auto;
+    /* Cuộn nếu cần */
+    background-color: rgb(0, 0, 0);
+    /* Màu nền */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Màu nền với độ mờ */
+    padding-top: 60px;
+    /* Khoảng cách từ trên xuống */
+}
+
+/* Nội dung modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    /* Căn giữa trên và dưới */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Chiều rộng của nội dung */
+}
+
+/* Đóng nút */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* CSS cho nút button và nút submit */
+button,
+input[type="submit"] {
+    background-color: #4CAF50;
+    /* Màu nền */
+    border: none;
+    /* Không viền */
+    color: white;
+    /* Màu chữ */
+    padding: 10px 20px;
+    /* Kích thước nút */
+    text-align: center;
+    /* Canh giữa chữ */
+    text-decoration: none;
+    /* Không gạch chân cho chữ */
+    display: inline-block;
+    /* Hiển thị như khối */
+    font-size: 16px;
+    /* Kích thước chữ */
+    margin: 4px 2px;
+    /* Khoảng cách giữa các nút */
+    cursor: pointer;
+    /* Con trỏ chuột */
+}
+
+/* Thêm hiệu ứng hover cho nút */
+button:hover,
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Màu nền khi di chuột vào */
+}
+
+
+select,
+button {
+    padding: 8px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

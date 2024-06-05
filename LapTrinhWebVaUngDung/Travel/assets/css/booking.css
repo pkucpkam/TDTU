@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+button {
+    width: calc(100% - 22px); /* Dùng calc để trừ đi border và padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    width: 100%; /* Đặt chiều rộng cho ngày tháng */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Định dạng phần hiển thị Destination */
+#destination {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+/* CSS */
+
+/* Thẻ select và option */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none; /* Loại bỏ giao diện mặc định của trình duyệt */
+    -webkit-appearance: none; /* Cho Safari */
+    -moz-appearance: none; /* Cho Firefox */
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png') no-repeat right 10px center; /* Thêm biểu tượng mũi tên */
+    background-size: 15px; /* Kích thước biểu tượng mũi tên */
+    cursor: pointer;
+}
+
+/* Tùy chỉnh giao diện khi hover */
+select:hover {
+    border-color: #4CAF50;
+}
+
+/* Tùy chỉnh giao diện khi focus */
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Tùy chỉnh giao diện của option */
+option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Tùy chỉnh giao diện khi hover */
+option:hover {
+    background-color: #f4f4f4;
+}
