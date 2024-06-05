@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Landmark Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        img {
+            border-radius: 8px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:disabled {
+            background-color: #cccccc;
+        }
+        button:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+        #capturedImagesContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #capturedImagesContainer img {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: #fff;
+        }
+        #angleCount {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+        #count {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Landmark Detection</h1>
+    <div>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+    <button id="captureBtn">Capture</button>
+    <button id="saveBtn" disabled>Save</button>
+    <div id="capturedImagesContainer"></div>
+    <p id="angleCount">Angles captured: <span id="count">0</span>/5</p>
+
+    <script>
+        const captureBtn = document.getElementById('captureBtn');
+        const saveBtn = document.getElementById('saveBtn');
+        const capturedImagesContainer = document.getElementById('capturedImagesContainer');
+        const angleCount = document.getElementById('angleCount');
+        const countSpan = document.getElementById('count');
+        const angles = ["center", "left", "right", "above", "bottom"];
+        let angleIdx = 0;
+        let count = 0;
+
+        captureBtn.addEventListener('click', () => {
+            const video = document.querySelector('img');
+            const canvas = document.createElement('canvas');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            const frame = canvas.toDataURL('image/jpeg').split(',')[1];
+            const angle = angles[angleIdx];
+            angleIdx = (angleIdx + 1) % angles.length;
+            count++;
+            countSpan.textContent = count;
+
+            if (count >= 5) {
+                angleCount.textContent = "All angles captured!";
+                captureBtn.disabled = true;
+                saveBtn.disabled = false;  // Kích hoạt nút Save
+            }
+
+            fetch('/capture', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    angle: angle,
+                    frame: frame
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.message);
+                const imgElement = document.createElement('img');
+                imgElement.src = `data:image/jpeg;base64,${data.frame}`;
+                imgElement.width = 320;  // set width to a smaller size
+                imgElement.height = 240; // set height to a smaller size
+                capturedImagesContainer.appendChild(imgElement);
+            })
+            .catch(err => console.error("Error:", err));
+        });
+
+        saveBtn.addEventListener('click', () => {
+            fetch('/save')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.message);
+                    saveBtn.disabled = true;  // Vô hiệu hóa nút Save sau khi bấm
+                    alert("Save data successfully");
+                    window.location.href = '/';
+                })
+                .catch(err => console.error("Error:", err));
+        });
+    </script>
+</body>
+</html>
