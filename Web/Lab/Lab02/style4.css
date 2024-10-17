@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: grey;
+}
+
+#chat {
+    border: 2px solid black;
+    width: 45%;
+    padding: 10px;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.hoder {
+    border: 1px none ;
+    margin: 10px;
+    text-align: left;
+    width: 35%;
+    padding: 10px;
+    color: black;
+    border-radius: 7px;
+    background-color: rgb(164, 159, 159);
+    font-family:monospace;
+
+}
+
+.me {
+    margin-left: 63.5%;
+    background-color: rgb(52, 206, 52);
+    color: white;
+}

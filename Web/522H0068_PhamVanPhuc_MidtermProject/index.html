@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link rel="shortcut icon" type="image/png" href="..\assets\image\favicon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Honk:SHLN@52.8&display=swap" rel="stylesheet">
+    <script src="js/myscript.js"></script>
+    <title>PhucPham Vivu - Home</title>
+</head>
+<body>
+    <header id="main-header">
+        <img id="logo" src="assets/image/logo.png" alt="Website Logo">
+        <nav id="nav-menu">
+            <ul >
+                <li><a class="nav-ele" id="now" href="#">Home</a></li>
+
+                <li><a class="nav-ele" href="about.html">About</a></li>
+
+                <li><a class="nav-ele" href="#hotdeals">Hot Deals</a></li>
+
+                <li><a class="nav-ele" href="#popular-des">Popular Destinations</a></li>
+
+                <li><a class="nav-ele" href="#">Login</a></li>
+
+            </ul>
+        </nav>
+        <!-- Sub nav menu -->
+        <nav id="sub-menu">
+          <li id="has-submenu">
+            <a class="nav-ele" href="#">Explore</a>
+            <ul class="sub-nav">
+              <li><a  id="now" href="#">Home</a></li>
+
+              <li><a  href="about.html">About</a></li>
+
+              <li><a  href="#hotdeals">Hot Deals</a></li>
+
+              <li><a  href="#popular-des">Destinations</a></li>
+
+              <li><a  href="#">Login</a></li>
+            </ul>
+          </li>
+      </nav>
+        
+    </header>
+    <main>
+        <div id="slider">
+            <div class="content1">
+                <h1 class="name">PhucPham ViVu</h1>
+                <p id="slogan">Find great places to stay, eat, shop, or visit from local experts.</p>
+                <div id="more-infor">
+                    <p id="infor">Discover a realm of unique and professional services at our online sanctuary. With an intuitive interface, we offer a diverse range of top-quality services – with insightful consultations . Our dedicated team ensures a flexible and delightful experience, adapting to your needs with efficiency and care.  At PhucPham ViVu, excellence meets innovation. Each click unveils tailored services, promising not just satisfaction but a commitment to leaving you with lasting memories. Embrace the exceptional and embark on a remarkable adventure with us – where your needs are not just met but anticipated and exceeded. Welcome to a world of extraordinary service and fulfillment</p>
+                </div>
+                <button onclick="moreButton()" id="more-button">See More</button>
+            </div>
+        </div>
+
+        <div id="hotdeals" class="pb-5">
+          <div class="horizontal-line"></div>
+            <h2 class="title">Hot Deals</h2>
+            <p class="des-title1">Choose an interesting trip for yourself with the best deals right now!</p>
+            <div class="row">
+
+              <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3">
+                  <div class="card shadow ">
+                    <div class="img-box">
+                        <img class="place-img" src="..\assets\image\vanhdadiaphuyen.png" alt="">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Dia Stone Rim</h4>
+                      <p class="card-text">Phu Yen</p>
+                      <p style="display: inline;" class="card-text mr-2">10.000.000 vnd <p class="sale-price">15.000.000 vnd</p></p>
+                    </div>
+                  </div> 
+                </div>
+        
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3  ">
+                    <div class="card shadow ">
+                        <div class="img-box">
+                            <img class="place-img" src="..\assets\image\codohue.jpg" alt="">
+                        </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Hue Capital</h4>
+                        <p class="card-text">Hue</p>
+                        <p style="display: inline;" class="card-text mr-2">10.000.000 vnd <p class="sale-price">15.000.000 vnd</p></p>
+                      </div>
+                    </div>
+                </div>
+        
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card shadow">
+                        <div class="img-box">
+                            <img class="place-img" src="..\assets\image\thunglungbacson.jpg" alt="">
+                        </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Bac Son Valley</h4>
+                        <p class="card-text">Lang Son</p>
+                        <p style="display: inline;" class="card-text mr-2">10.000.000 vnd <p class="sale-price">15.000.000 vnd</p></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pb-5" id="popular-des">
+          <div class="horizontal-line"></div>
+            <h2 class="title">Popular Destinations</h2>
+            <p class="des-title1">The destinations chosen by most people recently.</p>
+            <div class="row">
+
+              <div class="place col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3">
+                    <div class="card shadow">
+                        <img src="..\assets\image\halong.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ha Long Bay</h5>
+                            <p class="card-text">Hạ Long Bay, situated in Quang Ninh Province, Vietnam, is renowned for its emerald waters and thousands of towering limestone islands. A UNESCO World Heritage Site, its surreal beauty captivates visitors from around the globe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3">
+                    <div class="card shadow">
+                        <img src="..\assets\image\danang.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Golden Bridge</h5>
+                            <p class="card-text">
+                              The Golden Bridge in Da Nang is a unique architectural structure situated on Ba Na Mountain, with its golden frame creating the sensation of walking on a golden strip in the sky, offering visitors an impressive and travel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place col-sm-12 col-md-4 col-lg-4 col-xl-4 pb-3">
+                    <div class="card shadow">
+                        <img src="..\assets\image\thacbangioc.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ban Gioc waterfall</h5>
+                            <p class="card-text">Bản Giốc Waterfall in Cao Bằng Province, Vietnam, is the country's largest natural waterfall, cascading amidst lush greenery and dramatic rock formations. It's a popular tourist spot, drawing visitors with its awe-inspiring beauty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+          <section class="pt-1">
+            <div class="container text-center text-md-start mt-5">
+              <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold">TRAVEL WEBSITE</h6>
+                  <h6 class="text-uppercase fw-bold">PHUCPHAMVIVUU</h6>
+                  <img src="assets/image/logo.png" alt="" class="img-fluid mt-3">
+                </div>
+      
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold">Social</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="https://www.facebook.com/phucpham1803" class="text-white">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+                  </p>
+                  <p>
+                    <a href="https://www.instagram.com/pkucpka.m/" class="text-white">
+                        <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                  </p>
+                  <p>
+                    <a href="https://github.com/pkucpkam" class="text-white">
+                        <i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                  </p>
+
+                </div>
+      
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <h6 class="text-uppercase fw-bold">Useful links</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="about.html" class="text-white">About</a>
+                  </p>
+                  <p>
+                    <a href="#hotdeals" class="text-white">Hot Deals</a>
+                  </p>
+                  <p>
+                    <a href="#popular-des" class="text-white">Popular Destinations</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Help</a>
+                  </p>
+                </div>
+      
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p><i class="fa fa-map-marker" aria-hidden="true"></i> Ton Duc Thang University</p>
+                  <p><i class="fa fa-envelope" aria-hidden="true"></i> travel@vivuu.com</p>
+                  <p><i class="fa fa-phone" aria-hidden="true"></i> 0888888888</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> © 2024 Copyright:
+            <a>PhucPhamVivu.com</a>
+          </div>
+        </footer>
+</body>
+</html>

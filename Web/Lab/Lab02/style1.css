@@ -1,0 +1,82 @@
+h3 {
+    color: #388e3c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+table {
+    margin: 0px auto;
+    border: 2px #b00c2d dashed;
+    border-collapse: collapse;
+}
+
+table tr {
+    height: 40px;
+}
+
+table tr:nth-child(1) td:not(:nth-child(4)) {
+    text-transform: uppercase;
+    font-weight: bold ;
+    background-color: rgb(120, 39, 212);
+    color: white;
+}
+
+table tr:nth-child(1) td:nth-child(4) {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgb(233, 233, 150);
+}
+
+table tr:nth-child(1) td:nth-child(4):hover {
+    background-color: rgb(172, 172, 51);
+}
+
+table tr:nth-child(1):hover td:not(:nth-child(4)) {
+    background-color: rgb(78, 3, 163);
+}
+
+table tr:not(:nth-child(1)) td:nth-child(1) {
+    font-weight: bold;
+}
+
+table tr:not(:nth-child(1)) td:nth-child(1):hover {
+    background-color:rgb(154, 110, 204) ;
+    color: white;
+}
+
+table tr td {
+    text-align: center;
+    padding: 0px 10px;
+    
+}
+
+table tr:nth-child(3) td:nth-child(2),
+table tr:nth-child(7) td:nth-child(4),
+table tr:nth-child(6) td:nth-child(2){
+    background-color: rgb(233, 233, 150);
+}
+
+table tr:nth-child(3) td:nth-child(2):hover {
+    background-color: rgb(172, 172, 51);
+}
+
+table tr:nth-child(6) td:nth-child(2):hover{
+    background-color: rgb(172, 172, 51);
+}
+
+table tr:nth-child(7) td:nth-child(4):hover{
+    background-color: rgb(172, 172, 51);
+}
+
+table tr:nth-child(2) td:nth-child(4),
+table tr:nth-child(8) td:nth-child(2),
+table tr:nth-child(8) td:nth-child(3){
+    background-color: rgb(173, 172, 172);
+}
+
+table tr:nth-child(2) td:nth-child(4):hover,
+table tr:nth-child(8) td:nth-child(2):hover,
+table tr:nth-child(8) td:nth-child(3):hover{
+    background-color: grey;
+}
+

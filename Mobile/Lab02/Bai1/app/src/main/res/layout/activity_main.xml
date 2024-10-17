@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/image"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="52dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text=" Sign in to continue"
+            android:textColor="#D77070"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/account_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/lock_icon"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,HardcodedText,RtlHardcoded,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <CheckBox
+            android:id="@+id/cbKeepMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Keep me Signed In"
+            android:textColor="#14DB1E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="172dp"
+            android:layout_height="57dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Reset Password"
+            android:textAllCaps="true"
+            android:textColor="#D77070"
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck,TextContrastCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#06AB0D"
+        android:text="Sign In"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
+</androidx.constraintlayout.widget.ConstraintLayout>

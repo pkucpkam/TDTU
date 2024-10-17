@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="icon">icon</string>
+    <string name="h_v_t_n">Họ và tên</string>
+    <string name="nguy_n_v_n_to_n">Nguyễn Văn Toàn</string>
+    <string name="sex">Giới tính</string>
+    <string name="favourite">Sở thích</string>
+    <string name="email">Email</string>
+    <string name="address">Địa chỉ</string>
+    <string name="hobby">Sở thích</string>
+    <string name="love">Yêu thích</string>
+    <string name="swimAvai">Khả năng bơi</string>
+    <string name="toeic">TOEIC</string>
+    <string name="noti">Nhận thông báo</string>
+    <string name="name">Họ và tên</string>
+    <string name="infor">Thông tin cá nhân</string>
+</resources>

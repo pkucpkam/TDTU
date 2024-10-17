@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".sidebar a").click(function () {
+                var page = $(this).attr('href');
+                $(".content").load(page);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="users.php">Users</a>
+        <a href="places.php">Places</a>
+        <a href="hotdeals.php">Hot Deals</a>
+    </div>
+
+    <div class="content">
+        <!-- Thông tin sẽ hiển thị ở đây sau khi chọn một phần -->
+    </div>
+
+    
+</body>
+
+</html>

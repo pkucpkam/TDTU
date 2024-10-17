@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="loginForm" class="needs-validation" novalidate>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="email" class="form-control" id="username"  placeholder="Username" required>
+                                <div class="invalid-feedback">Please enter your email.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                <div class="invalid-feedback">Please enter your password.</div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label class="mr-2">Gender</label>
+                                </div>
+                                <div class="form-group col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required checked>
+                                        <label class="form-check-label" for="genderMale">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                                        <label class="form-check-label" for="genderFemale">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select class="form-control" id="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="usa">USA</option>
+                                    <option value="uk">UK</option>
+                                    <option value="canada">Canada</option>
+                                    <!-- Add more countries as needed -->
+                                </select>
+                                <div class="invalid-feedback">Please select your country.</div>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Login</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var form = document.getElementById('loginForm');
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            }, false);
+        })();
+    </script>
+</body>
+</html>

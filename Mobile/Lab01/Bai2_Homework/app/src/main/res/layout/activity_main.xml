@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginTop="30dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5D5959">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ADA6A6"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/label_image"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="#534F4F"
+                android:contentDescription="@string/icon"
+                android:src="@drawable/image"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/label_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@id/label_image"
+                android:background="#AFABAB"
+                android:gravity="center_vertical"
+                android:text="Andoird Checkboxes"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Checkboxes for selection"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/cbAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Android"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/cbIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="iOS"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/cbWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Windows"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/cbRim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RIM"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D0D0D0"
+        android:text="Click here to see Results"
+        android:textColor="#000"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvResults1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp" />
+
+</LinearLayout>

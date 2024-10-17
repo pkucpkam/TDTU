@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab01</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="admin">admin</string>
+    <string name="remember_me">Remember me</string>
+    <string name="enter_your_content_here">Enter your content here</string>
+    <string name="click_me">Click me</string>
+    <string name="textview_to_display_your_content">TextView to display content here </string>
+</resources>

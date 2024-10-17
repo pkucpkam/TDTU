@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABABA"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_content_here"
+        android:inputType="text"
+        android:paddingTop="50dp"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/clickMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#756D6D"
+        android:shadowColor="#000000"
+        android:text="@string/click_me"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/currentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_to_display_your_content"
+        android:textSize="24sp" />
+
+</LinearLayout>

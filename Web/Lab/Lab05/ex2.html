@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Strength Checker</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+  margin: 10px 0;
+  text-align: left;
+}
+
+#password {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+#password:focus {
+  border: blue 2px solid;
+  outline: blue;
+}
+
+.criteria {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.red {
+  background-color: #ff6666;
+}
+
+.criteriaList {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.criteriaList div {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.criteriaList div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <p>New password</p>
+  <input type="password" id="password" placeholder="Enter your password">
+  <p>Password required met!</p>
+  <div id="criteriaList"></div>
+
+</div>
+
+<script>
+const passwordInput = document.getElementById('password');
+const criteriaList = document.getElementById('criteriaList');
+
+const criteriaData = [
+  { id: 'length', description: 'At least 8 characters' },
+  { id: 'number', description: 'At least 1 number' },
+  { id: 'special', description: 'At least 1 special character' },
+  { id: 'leading', description: 'No leading or trailing spaces' }
+];
+
+passwordInput.addEventListener('input', function() {
+  const password = passwordInput.value;
+  
+  criteriaData.forEach(criterion => {
+    const criterionElement = document.getElementById(criterion.id);
+    switch (criterion.id) {
+      case 'length':
+        if (password.length >= 8) {
+          criterionElement.classList.remove('red');
+          criterionElement.classList.add('green');
+        } else {
+          criterionElement.classList.remove('green');
+          criterionElement.classList.add('red');
+        }
+        break;
+      case 'number':
+        if (/\d/.test(password)) {
+          criterionElement.classList.remove('red');
+          criterionElement.classList.add('green');
+        } else {
+          criterionElement.classList.remove('green');
+          criterionElement.classList.add('red');
+        }
+        break;
+      case 'special':
+        if (/[^a-zA-Z0-9\s]/.test(password)) {
+          criterionElement.classList.remove('red');
+          criterionElement.classList.add('green');
+        } else {
+          criterionElement.classList.remove('green');
+          criterionElement.classList.add('red');
+        }
+        break;
+      case 'leading':
+        if (password.trim() === password) {
+          criterionElement.classList.remove('red');
+          criterionElement.classList.add('green');
+        } else {
+          criterionElement.classList.remove('green');
+          criterionElement.classList.add('red');
+        }
+        break;  
+      default:
+        break;
+    }
+  });
+});
+
+// Initialize criteria list
+criteriaData.forEach(criterion => {
+  const criterionElement = document.createElement('div');
+  criterionElement.setAttribute('id', criterion.id);
+  criterionElement.classList.add('criteria');
+  criterionElement.textContent = criterion.description;
+  criteriaList.appendChild(criterionElement);
+});
+</script>
+</body>
+</html>

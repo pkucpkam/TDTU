@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fetch Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>Danh sách sinh viên</h2>
+    <div class="my-3">
+        <form>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nhập tên" name="name">
+                    </div>
+                    <div class="col">
+                        <label for="age">Tuổi</label>
+                        <input type="number" class="form-control" placeholder="Nhập tuổi" name="age" id="age">
+                    </div>
+                </div>
+            </div>
+            <p>Chọn một trong hai button, sau đó dữ liệu sẽ được thêm vào một trong hai bảng tương ứng. Ngoài ra, dữ liệu cũng được lưu vào một trong hai loại storage tương ứng.</p>
+            <div class="form-group">
+                <button class="btn btn-primary">Thêm Local Storage</button>
+                <button class="btn btn-danger">Thêm Session Storage</button>
+            </div>
+        </form>
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <h5><span class="text-primary">LocalStorage</span></h5>
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn Linh</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Đinh Tiên Hoàng</td>
+                    <td>27</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <h5><span class="text-danger">SessionStorage</span></h5>
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyễn Hữu Thọ</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nguyễn Thị Thập</td>
+                        <td>25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>Sau khi hoàn tất, thử các trường hợp sau</p>
+    <ul>
+        <li>Tải lại trang (F5)</li>
+        <li>Mở trang trong một tab mới</li>
+        <li>Tắt hết các tab và mở lại từ đầu</li>
+    </ul>
+</div>
+</body>
+</html>
