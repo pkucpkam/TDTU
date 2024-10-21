@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa sản phẩm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-3">
+        <h4 class="text-primary">Chỉnh sửa sản phẩm</h4>
+        <a href="/" class="btn btn-secondary mb-3">Quay lại</a>
+        
+        <form method="POST" action="/edit/<%= product.id %>">
+            <div class="form-group">
+                <label for="name">Tên sản phẩm</label>
+                <input type="text" class="form-control" id="name" name="name" value="<%= product.name %>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Giá sản phẩm</label>
+                <input type="number" class="form-control" id="price" name="price" value="<%= product.price %>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="desc">Mô tả</label>
+                <textarea class="form-control" id="desc" name="desc" rows="4"><%= product.desc || '' %></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Cập nhật sản phẩm</button>
+        </form>
+    </div>
+</body>
+</html>
