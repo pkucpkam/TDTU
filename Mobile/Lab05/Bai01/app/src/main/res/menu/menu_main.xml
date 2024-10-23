@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_check_uncheck"
+        android:title="Check/Uncheck all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_selected"
+        android:title="Delete selected"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_all"
+        android:title="Delete all"
+        app:showAsAction="never" />
+</menu>
