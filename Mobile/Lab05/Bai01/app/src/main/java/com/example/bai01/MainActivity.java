@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, allChecked ? "Uncheck all" : "Check all", Toast.LENGTH_SHORT).show();
             return true;
         } else if (id == R.id.action_delete_selected) {
-            showConfirmationDialog("Xóa mục đã chọn", "Bạn có chắc chắn muốn xóa các mục đã chọn không?", true);
+            showConfirmationDialog("Xóa mục đã chọn", "Chắc chắn muốn xóa các mục đã chọn không?", true);
             return true;
         } else if (id == R.id.action_delete_all) {
-            showConfirmationDialog("Xóa tất cả", "Bạn có chắc chắn muốn xóa tất cả các mục không?", false);
+            showConfirmationDialog("Xóa tất cả", "Chắc chắn muốn xóa tất cả các mục không?", false);
             return true;
         }
 

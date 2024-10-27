@@ -33,7 +33,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         Product product = productList.get(position);
         holder.itemText.setText(product.getName());
         holder.checkBox.setChecked(product.isSelected());
-
         holder.checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> product.setSelected(isChecked));
     }
 

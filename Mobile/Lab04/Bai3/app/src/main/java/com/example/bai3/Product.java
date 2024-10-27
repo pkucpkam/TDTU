@@ -6,7 +6,7 @@ public class Product {
 
     public Product(String name) {
         this.name = name;
-        this.isSelected = false; // Mặc định chưa được chọn
+        this.isSelected = false;
     }
 
     public String getName() {
