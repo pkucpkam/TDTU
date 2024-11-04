@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề ứng dụng -->
+
+    <!-- Số trung tâm -->
+    <TextView
+        android:id="@+id/centerNumber"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1A1FD1"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="120sp" />
+
+    <!-- Nhãn màu chữ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textColorLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Text Color"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/textColorInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Nút Lưu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/backgroundColorLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:text="Background Color"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/backgroundColorInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="#2222FF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#AA00FF"
+        android:text="SAVE"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

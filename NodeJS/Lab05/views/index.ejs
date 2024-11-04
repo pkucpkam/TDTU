@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Danh sách sinh viên</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container my-3">
+        <h4 class="my-5 text-primary text-center text-uppercase">Danh sách sinh viên</h4>
+        <a class="btn btn-success btn-sm my-4" href="/add">Thêm sinh viên</a>
+        <p>Chọn một sinh viên để xem chi tiết</p>
+        <table class="table table-striped border">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Tuổi</th>
+                    <th>Email</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% users.forEach(user=> { %>
+                    <tr>
+                        <td>
+                            <%=user.id%>
+                        </td>
+                        <td><a href="/profile/<%=user.id%>">
+                                <%=user.fullName%>
+                            </a></td>
+                        <td>
+                            <%=user.gender%>
+                        </td>
+                        <td>
+                            <%=user.age%>
+                        </td>
+                        <td>
+                            <%=user.email%>
+                        </td>
+                        <td>
+                            <button onclick="showUpdateModal(this)" data-user='<%= JSON.stringify(user) %>'
+                                class="btn btn-sm btn-outline-primary">Chỉnh sửa</button>
+
+                            <button onclick="showDeleteModal('<%= user.id %>', '<%= user.fullName %>')"
+                                class="btn btn-sm btn-outline-danger">Xóa</button>
+                        </td>
+
+                    </tr>
+                    <%});%>
+            </tbody>
+        </table>
+        <p>Tổng số sinh viên: <strong class="text-danger">
+                <%=users.length%>
+            </strong></p>
+    </div>
+
+    <!-- <div id="flash-alert" class="alert alert-success text-center w-25 mx-auto my-3">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <span>Đã xóa sinh viên <strong>Nguyễn Xuân Vinh</strong></span>
+    </div> -->
+
+
+    <!-- Confirm delete -->
+    <div id="deleteModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Xóa sinh viên</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc rằng muốn xóa <strong id="deleteUserName"></strong>?
+                </div>
+                <div class="modal-footer">
+                    <button id="confirmDeleteBtn" type="button" class="btn btn-danger">Xóa</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Update user modal -->
+    <div id="updateModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cập nhật thông tin sinh viên</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name">Họ tên</label>
+                        <input class="form-control" type="text" id="name" placeholder="Nhập tên sinh viên">
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="gender-male" name="gender"
+                                value="male">
+                            <label class="custom-control-label" for="gender-male">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="gender-female" name="gender"
+                                value="female">
+                            <label class="custom-control-label" for="gender-female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Tuổi</label>
+                        <input class="form-control" type="number" id="age" placeholder="Nhập tuổi" min="18" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" placeholder="Nhập email">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="updateBtn" type="button" class="btn btn-primary">Cập nhật</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        setTimeout(() => {
+            $('#flash-alert').fadeOut(2000)
+        }, 1000);
+    </script>
+
+    <script>
+        function showDeleteModal(userId, userName) {
+            document.getElementById('deleteUserName').textContent = userName;
+            document.getElementById('confirmDeleteBtn').dataset.userId = userId;
+            $('#deleteModal').modal('show');
+        }
+
+        document.getElementById('confirmDeleteBtn').addEventListener('click', function () {
+            const userId = this.dataset.userId;
+
+            fetch(`/students/${userId}`, {
+                method: 'DELETE',
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('sinh viên đã được xóa thành công!');
+                        location.reload(); 
+                    } else {
+                        alert('Có lỗi xảy ra khi xóa sinh viên.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Có lỗi xảy ra khi kết nối với server.');
+                });
+        });
+    </script>
+
+    <script>
+        function showUpdateModal(button) {
+            const user = JSON.parse(button.getAttribute('data-user'));
+            document.getElementById('name').value = user.fullName;
+            document.getElementById('age').value = user.age || '';
+            document.getElementById('email').value = user.email || '';
+
+            if (user.gender) {
+                const gender = user.gender.toLowerCase();
+                if (gender === 'male') {
+                    document.getElementById('gender-male').checked = true;
+                } else if (gender === 'female') {
+                    document.getElementById('gender-female').checked = true;
+                }
+            }
+
+            document.getElementById('updateBtn').dataset.userId = user.id;
+            $('#updateModal').modal('show');
+        }
+
+        document.getElementById('updateBtn').addEventListener('click', function () {
+            const userId = this.dataset.userId;
+            const updatedUser = {
+                fullName: document.getElementById('name').value,
+                gender: document.querySelector('input[name="gender"]:checked').value,
+                age: document.getElementById('age').value,
+                email: document.getElementById('email').value,
+            };
+
+
+
+            fetch(`/students/${userId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(updatedUser),
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Cập nhật thông tin sinh viên thành công!');
+                        location.reload();
+                    } else {
+                        alert('Có lỗi xảy ra khi cập nhật thông tin.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Có lỗi xảy ra khi kết nối với server.');
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>
