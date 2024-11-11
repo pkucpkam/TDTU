@@ -30,18 +30,18 @@
     <div class="row justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-5">
         <div class="border p-3 rounded bg-light">
-          <form>
+          <form action="/account/login" method="POST"> <!-- Thêm action và method -->
             <div class="form-group">
-              <label for="user">Username</label>
+              <label for="email">Email</label> <!-- Đổi label thành Email -->
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text">
+                  <span class="input-group-text"> 
                     <i class="fas fa-user"></i>
                   </span>
                 </div>
-                <input id="username" type="text" class="form-control" placeholder="Username">
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
+                <!-- Thêm thuộc tính name -->
               </div>
-
             </div>
             <div class="form-group">
               <label for="pass">Password</label>
@@ -51,28 +51,24 @@
                     <i class="fas fa-lock"></i>
                   </span>
                 </div>
-                <input type="password" class="form-control" placeholder="Password">
+                <input id="pass" name="password" type="password" class="form-control" placeholder="Mật khẩu" required>
+                <!-- Thêm thuộc tính name -->
               </div>
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                <input type="checkbox" class="custom-control-input" id="customCheck" name="remember">
                 <label class="custom-control-label" for="customCheck">Remember</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="alert alert-danger alert-dismissible fade show">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                Invalid username or password!
               </div>
             </div>
             <div class="form-group">
               <button class="btn btn-success px-5" type="submit">Login</button>
             </div>
             <div class="form-group">
-              <p>Don't have any account? <a href="#">Register now!</a></p>
+              <p>Don't have account? <a href="/account/register">Register now!</a></p>
             </div>
           </form>
+
         </div>
       </div>
     </div>

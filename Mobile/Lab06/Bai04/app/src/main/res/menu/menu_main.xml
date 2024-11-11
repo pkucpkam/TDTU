@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_create_file"
+        android:title="Tạo File"
+        android:icon="@drawable/baseline_insert_drive_file_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_create_folder"
+        android:title="Tạo Thư Mục"
+        android:icon="@drawable/baseline_create_new_folder_24"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete All"
+        android:icon="@android:drawable/ic_menu_manage"
+        app:showAsAction="never"/>
+</menu>

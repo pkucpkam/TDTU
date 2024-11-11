@@ -6,7 +6,7 @@
   <title>Register</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css    ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -25,7 +25,6 @@
 
   <h3 class="text-center my-5 text-light">Account Registration</h3>
 
-  <!-- buộc toàn bộ dòng và cột phải bỏ trong class container -->
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-5">
@@ -39,20 +38,19 @@
                     <i class="fas fa-user"></i>
                   </span>
                 </div>
-                <input id="name" name="name" type="text" class="form-control" placeholder="Your Name">
+                <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required>
               </div>
-
+            </div>
             <div class="form-group">
               <label for="user">Email</label>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-envelope"></i>
                   </span>
                 </div>
-                <input id="email" name="email" type="text" class="form-control" placeholder="Email">
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
               </div>
-
             </div>
             <div class="form-group">
               <label for="pass">Password</label>
@@ -62,7 +60,7 @@
                     <i class="fas fa-lock"></i>
                   </span>
                 </div>
-                <input type="password" name="password" class="form-control" placeholder="Password">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
               </div>
             </div>
             <div class="form-group">
@@ -73,7 +71,7 @@
                     <i class="fas fa-lock"></i>
                   </span>
                 </div>
-                <input type="password"  name="confirmPassword" class="form-control" placeholder="Password">
+                <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" required>
               </div>
             </div>
             <div class="form-group">
@@ -86,14 +84,13 @@
               <button class="btn btn-success px-5" type="submit">Register</button>
             </div>
             <div class="form-group">
-              <p>Already have an account? <a href="#">Login now!</a></p>
+              <p>Already have an account? <a href="login">Login now!</a></p>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-
 
 </body>
 
