@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="product1" class="edu.tdtu.bai01.Product">
+        <property name="id"  value="1"/>
+        <property name="name"  value="Coca"/>
+        <property name="price"  value="15"/>
+        <property name="description"  value="Coca from VietNam"/>
+    </bean>
+</beans>

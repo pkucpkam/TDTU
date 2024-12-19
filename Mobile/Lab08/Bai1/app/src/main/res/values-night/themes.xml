@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Bai1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue_actionbar</item>
+        <item name="colorPrimaryVariant">@color/blue_actionbar</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>

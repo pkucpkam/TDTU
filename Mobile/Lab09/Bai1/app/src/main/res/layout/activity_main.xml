@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="16dip"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtUrl"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:hint="http://example.com/file.mp4"
+            android:layout_marginRight="8dip"
+            android:inputType="textWebEditText"
+            android:background="@drawable/url_background"
+            android:layout_height="40dip"/>
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:textAllCaps="false"
+            android:text="Download"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="104dip"
+            android:layout_height="104dip"
+            android:src="@drawable/download"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dip"
+            android:textSize="18sp"
+            android:text="Let's download a file"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+
+</LinearLayout>

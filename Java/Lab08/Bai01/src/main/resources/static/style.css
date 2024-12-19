@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

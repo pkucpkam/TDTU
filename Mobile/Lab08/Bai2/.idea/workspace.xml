@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f60a371-8dab-4ad6-bb8d-4f291b26c30c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/bai01/src/main/java/edu/tdtu/bai01/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai01/bai01/src/main/resources/AppConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai02/bai02/src/main/java/edu/tdtu/bai02/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai02/bai02/src/main/java/edu/tdtu/bai02/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai03/bai03/src/main/java/edu/tdtu/bai03/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai03/bai03/src/main/java/edu/tdtu/bai03/PdfTextWiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai03/bai03/src/main/java/edu/tdtu/bai03/PlainTextWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai03/bai03/src/main/java/edu/tdtu/bai03/TextEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai03/bai03/src/main/java/edu/tdtu/bai03/TextWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab06/Bai05/bai05/src/main/java/edu/tdtu/bai05/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab07/Bai02/bai2/src/main/java/edu/tdtu/bai2/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab07/Bai02/bai2/src/main/java/edu/tdtu/bai2/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/java/com/example/Bai01/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/resources/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/resources/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai01/src/main/resources/templates/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai02/src/main/resources/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab08/Bai02/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/conf/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/conf/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/conf/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/controllers/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/controllers/ExceptionHandlingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/controllers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/controllers/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/account/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/account/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/account/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/order/OrderProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/order/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/orderDetail/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/orderDetail/OrderDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/orderDetail/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/model/product/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/payload/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/payload/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/payload/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/payload/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/utils/ImageUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java/Lab09/src/main/java/com/example/lab09/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Receiver/app/src/main/res/drawable/ic_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab09/Bai2/app/src/main/res/drawable/baseline_library_music_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab09/Bai2/app/src/main/res/raw/pickleball.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab09/Bai2/app/src/main/res/raw/tdtu.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab09/Bai2/app/src/main/res/raw/thienlyoi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_bottom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_bottom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_center.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_center.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_left.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_left.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_right.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FaceAuthentication/img/face_right.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Lab05.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/Lab2/src/PhamVanPhuc-522H0068.mp4" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2pmP2x8GdEx9geHcNtRl3tqgZEN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/TDTU/Github/TDTU/Mobile/Lab09/Bai1"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f60a371-8dab-4ad6-bb8d-4f291b26c30c" name="Changes" comment="" />
+      <created>1733368073881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733368073881</updated>
+    </task>
+    <servers />
+  </component>
+</project>

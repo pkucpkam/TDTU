@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Animation Movies</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://i.ytimg.com/vi/t9-ARCQjA2Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLABxIfB5BwVOMWCsiHlKtHuOE24Wg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      z-index: 2;
+      animation: slideIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #ff6347;
+      margin-bottom: 20px;
+      animation: bounceIn 1s ease;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .btn-custom {
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      border-radius: 25px;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #ff4500;
+      transform: scale(1.1);
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="overlay"></div>
+<div class="content">
+  <h1>About Animation Movies</h1>
+  <p>
+    Welcome to Animation Movies, your one-stop destination for the best animated movies and series. From heartwarming stories to epic adventures, we offer a wide range of animation that will take you on magical journeys.
+  </p>
+  <p>
+    Our mission is to bring joy and inspiration to all ages through the art of animation. Whether you're young or just young at heart, we have something for you to enjoy!
+  </p>
+  <a href="/" class="btn btn-custom">Back to Home</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
