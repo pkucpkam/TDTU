@@ -1,0 +1,7 @@
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\bin\Debug\Exercise1.exe.config
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\bin\Debug\Exercise1.exe
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\bin\Debug\Exercise1.pdb
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\obj\Debug\Exercise1.csproj.AssemblyReference.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\obj\Debug\Exercise1.csproj.CoreCompileInputs.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\obj\Debug\Exercise1.exe
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\Lab01\Exercise1\Exercise1\obj\Debug\Exercise1.pdb

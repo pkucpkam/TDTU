@@ -1,0 +1,5 @@
+train: .\YOLOv8Dataset/train/images
+val: .\YOLOv8Dataset/val/images
+test: .\YOLOv8Dataset/test/images
+nc: 1
+names: ["Motorcycle"]

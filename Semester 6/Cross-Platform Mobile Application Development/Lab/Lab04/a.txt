@@ -1,0 +1,150 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Lab04 Ex05',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+  late TabController _tabController;
+  int _selectedIndex = 0;
+  bool _isUnlocked = false;
+  final List<String> _titles = [
+    'Home',
+    'Search',
+    'Notifications',
+    'Profile',
+    'Secret',
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _initializeTabController();
+  }
+
+  void _initializeTabController() {
+    _tabController = TabController(length: _isUnlocked ? 5 : 4, vsync: this);
+    _tabController.addListener(() {
+      if (_tabController.index != _selectedIndex) {
+        setState(() {
+          _selectedIndex = _tabController.index;
+        });
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
+  void _onItemTapped(int index) {
+    if (!_isUnlocked && index == 4) return;
+
+    setState(() {
+      _selectedIndex = index;
+      _tabController.index = index;
+    });
+  }
+
+  void _toggleUnlock() {
+    setState(() {
+      if (_selectedIndex == 4) {
+        _selectedIndex = 0;
+      }
+      _isUnlocked = !_isUnlocked;
+      _tabController.dispose();
+      _initializeTabController();
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Bottom NavBar + TabBar'),
+        backgroundColor: Colors.lightBlueAccent,
+        foregroundColor: Colors.white,
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(
+              _isUnlocked ? Icons.lock_open : Icons.lock,
+              color: Colors.white,
+            ),
+            onPressed: _toggleUnlock,
+          ),
+        ],
+        bottom: TabBar(
+          controller: _tabController,
+          tabs: [
+            const Tab(icon: Icon(Icons.home), text: 'Home'),
+            const Tab(icon: Icon(Icons.search), text: 'Search'),
+            const Tab(icon: Icon(Icons.notifications), text: 'Notifications'),
+            const Tab(icon: Icon(Icons.person), text: 'Profile'),
+            if (_isUnlocked)
+              const Tab(icon: Icon(Icons.security), text: 'Secret'),
+          ],
+        ),
+      ),
+      body: Center(
+        child: Text(
+          _titles[_selectedIndex],
+          style: const TextStyle(fontSize: 40),
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.notifications),
+            label: 'Notifications',
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+          if (_isUnlocked)
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.security),
+              label: 'Secret',
+            ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.lightBlue,
+        unselectedItemColor: Colors.grey,
+        onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
+      ),
+    );
+  }
+}

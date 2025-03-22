@@ -1,0 +1,177 @@
+using UnityEngine;
+
+namespace Chapter.Strategy {
+    public class Drone : MonoBehaviour {
+        
+        // Ray parameters
+        private RaycastHit _hit;
+        private Vector3 _rayDirection;
+        private float _rayAngle = -45.0f;
+        private float _rayDistance = 15.0f;
+
+        // Movement parameters
+        public float speed = 1.0f;
+        public float maxHeight = 5.0f;
+        public float weavingDistance = 1.5f;
+        public float fallbackDistance = 20.0f;
+
+        void Start() {
+            _rayDirection = 
+                transform.TransformDirection(Vector3.back) 
+                * _rayDistance;
+            
+            _rayDirection = 
+                Quaternion.Euler(_rayAngle, 0.0f, 0f) 
+                * _rayDirection;
+        }
+
+        public void ApplyStrategy(IManeuverBehaviour strategy) {
+            strategy.Maneuver(this);
+        }
+
+        void Update() {
+            Debug.DrawRay(transform.position, 
+                _rayDirection, Color.blue);
+            
+            if (Physics.Raycast(
+                transform.position,
+                _rayDirection, out _hit, _rayDistance)) {
+                
+                if (_hit.collider) {
+                    Debug.DrawRay(
+                        transform.position, 
+                        _rayDirection, Color.green);
+                }
+            }
+        }
+    }
+}
+
+using UnityEngine;
+using System.Collections.Generic;
+
+namespace Chapter.Strategy {
+    public class ClientStrategy : MonoBehaviour {
+        
+        private GameObject _drone;
+        private List<IManeuverBehaviour> 
+            _components = new List<IManeuverBehaviour>();
+        
+        private void SpawnDrone() {
+            _drone = 
+                GameObject.CreatePrimitive(PrimitiveType.Cube);
+            
+            _drone.AddComponent<Drone>();
+            
+            _drone.transform.position = 
+                Random.insideUnitSphere * 10;
+            
+            ApplyRandomStrategies();
+        }
+
+        private void ApplyRandomStrategies() {
+            _components.Add(
+                _drone.AddComponent<WeavingManeuver>());
+            _components.Add(
+                _drone.AddComponent<BoppingManeuver>());
+            _components.Add(
+                _drone.AddComponent<FallbackManeuver>());
+            
+            int index = Random.Range(0, _components.Count);
+            
+            _drone.GetComponent<Drone>().
+                ApplyStrategy(_components[index]);
+        }
+        
+        void OnGUI() {
+            if (GUILayout.Button("Spawn Drone")) {
+                SpawnDrone();
+            }
+        }
+    }
+}
+
+using UnityEngine;
+using System.Collections;
+
+namespace Chapter.Strategy
+{
+    public class FallbackManeuver : 
+        MonoBehaviour, IManeuverBehaviour {
+        
+        public void Maneuver(Drone drone) {
+            StartCoroutine(Fallback(drone));
+        }
+
+        IEnumerator Fallback(Drone drone)
+        {
+            float time = 0;
+            float speed = drone.speed;
+            Vector3 startPosition = drone.transform.position;
+            Vector3 endPosition = startPosition;
+            endPosition.z = drone.fallbackDistance;
+
+            while (time < speed)
+            {
+                drone.transform.position = 
+                    Vector3.Lerp(
+                        startPosition, endPosition, time / speed);
+               
+                time += Time.deltaTime;
+                
+                yield return null;
+            }
+        }
+    }
+}
+
+using System;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace Chapter.Singleton 
+{
+    public class GameManager : Singleton<GameManager> 
+    {
+        private DateTime _sessionStartTime;
+        private DateTime _sessionEndTime;
+
+        void Start() {
+            // TODO:
+            // - Load player save
+            // - If no save, redirect player to registration scene
+            // - Call backend and get daily challenge and rewards 
+
+            _sessionStartTime = DateTime.Now;
+            Debug.Log(
+                "Game session start @: " + DateTime.Now);
+        }
+        
+        void OnApplicationQuit() {
+            _sessionEndTime = DateTime.Now;
+            
+            TimeSpan timeDifference = 
+                _sessionEndTime.Subtract(_sessionStartTime);
+            
+            Debug.Log(
+                "Game session ended @: " + DateTime.Now);
+            Debug.Log(
+                "Game session lasted: " + timeDifference);
+        }
+
+        void OnGUI() {
+            if (GUILayout.Button("Next Scene")) {
+                SceneManager.LoadScene(
+                    SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+    }
+}
+
+namespace Chapter.Strategy
+{
+    public interface IManeuverBehaviour
+    {
+        void Maneuver(Drone drone);
+    }
+}
