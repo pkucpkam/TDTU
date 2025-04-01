@@ -1,0 +1,6 @@
+E:\522H0068_PhamVanPhuc_Lab05\DatabaseFactoryLibrary\bin\Debug\DatabaseFactoryLibrary.dll
+E:\522H0068_PhamVanPhuc_Lab05\DatabaseFactoryLibrary\bin\Debug\DatabaseFactoryLibrary.pdb
+E:\522H0068_PhamVanPhuc_Lab05\DatabaseFactoryLibrary\obj\Debug\DatabaseFactoryLibrary.csproj.AssemblyReference.cache
+E:\522H0068_PhamVanPhuc_Lab05\DatabaseFactoryLibrary\obj\Debug\DatabaseFactoryLibrary.csproj.CoreCompileInputs.cache
+E:\522H0068_PhamVanPhuc_Lab05\DatabaseFactoryLibrary\obj\Debug\DatabaseFactoryLibrary.dll
+E:\522H0068_PhamVanPhuc_Lab05\DatabaseFactoryLibrary\obj\Debug\DatabaseFactoryLibrary.pdb

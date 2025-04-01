@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|f:\\tdtu\\github\\tdtu\\semester 6\\design pattern\\lab\\522h0068\\studentmanagementwebapp\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|solutionrelative:views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|f:\\tdtu\\github\\tdtu\\semester 6\\design pattern\\lab\\522h0068\\studentmanagementwebapp\\views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|solutionrelative:views\\student\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|f:\\tdtu\\github\\tdtu\\semester 6\\design pattern\\lab\\522h0068\\studentmanagementwebapp\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|f:\\tdtu\\github\\tdtu\\semester 6\\design pattern\\lab\\522h0068\\studentmanagementwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|f:\\tdtu\\github\\tdtu\\semester 6\\design pattern\\lab\\522h0068\\studentmanagementwebapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|f:\\tdtu\\github\\tdtu\\semester 6\\design pattern\\lab\\522h0068\\studentmanagementwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FCB8509-A986-41BD-B1F3-AB03A00B1C2D}|StudentManagementWebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Views\\Student\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Edit.cshtml",
+              "ToolTip": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Views\\Student\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Student\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T15:15:37.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Create.cshtml",
+              "ToolTip": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Views\\Student\\Create.cshtml*",
+              "RelativeToolTip": "Views\\Student\\Create.cshtml*",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwD0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T15:13:36.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:48:41.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T14:48:37.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T09:16:37.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "F:\\TDTU\\Github\\TDTU\\Semester 6\\Design Pattern\\Lab\\522H0068\\StudentManagementWebApp\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T09:15:11.409Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

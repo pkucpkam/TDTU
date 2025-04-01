@@ -1,0 +1,175 @@
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\appsettings.Development.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\appsettings.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.staticwebassets.runtime.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.exe
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.deps.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.runtimeconfig.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.pdb
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\DatabaseFactoryLibrary.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\DatabaseFactoryLibrary.pdb
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.csproj.AssemblyReference.cache
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.AssemblyInfoInputs.cache
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.AssemblyInfo.cs
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.csproj.CoreCompileInputs.cache
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.MvcApplicationPartsAssemblyInfo.cache
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.RazorAssemblyInfo.cache
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.RazorAssemblyInfo.cs
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.build.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.development.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.StudentManagementWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.StudentManagementWebApp.props
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StudentManagementWebApp.props
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StudentManagementWebApp.props
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\scopedcss\bundle\StudentManagementWebApp.styles.css
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\scopedcss\projectbundle\StudentManagementWebApp.bundle.scp.css
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentM.E34A80E9.Up2Date
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\refint\StudentManagementWebApp.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.pdb
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.genruntimeconfig.cache
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\obj\Debug\net8.0\ref\StudentManagementWebApp.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Azure.Core.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Azure.Identity.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.ClientModel.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.Memory.Data.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+E:\522H0068_PhamVanPhuc_Lab05\New folder\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\appsettings.Development.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\appsettings.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.staticwebassets.runtime.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.staticwebassets.endpoints.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.exe
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.deps.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.runtimeconfig.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\StudentManagementWebApp.pdb
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Azure.Core.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Azure.Identity.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.ClientModel.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.Memory.Data.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\DatabaseFactoryLibrary.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\bin\Debug\net8.0\DatabaseFactoryLibrary.pdb
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.csproj.AssemblyReference.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.AssemblyInfoInputs.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.AssemblyInfo.cs
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.csproj.CoreCompileInputs.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.MvcApplicationPartsAssemblyInfo.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.RazorAssemblyInfo.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.RazorAssemblyInfo.cs
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.sourcelink.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\scopedcss\bundle\StudentManagementWebApp.styles.css
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\scopedcss\projectbundle\StudentManagementWebApp.bundle.scp.css
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.build.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.development.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.StudentManagementWebApp.Microsoft.AspNetCore.StaticWebAssets.props
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.StudentManagementWebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.StudentManagementWebApp.props
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StudentManagementWebApp.props
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StudentManagementWebApp.props
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.pack.json
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentM.E34A80E9.Up2Date
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\refint\StudentManagementWebApp.dll
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.pdb
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\StudentManagementWebApp.genruntimeconfig.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068\StudentManagementWebApp\obj\Debug\net8.0\ref\StudentManagementWebApp.dll

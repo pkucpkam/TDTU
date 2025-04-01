@@ -505,12 +505,13 @@ namespace Chapter.Command
         private bool _isRecording;
         private BikeController _bikeController;
         private Command _buttonA, _buttonD, _buttonW;
+        private Command _healCommand;
         
         void Start()
         {
             _invoker = gameObject.AddComponent<Invoker>();
             _bikeController = FindObjectOfType<BikeController>();
-
+            _healCommand = new HealCommand(_bikeController, 20.0f);
             _buttonA = new TurnLeft(_bikeController);
             _buttonD = new TurnRight(_bikeController);
             _buttonW = new ToggleTurbo(_bikeController);
@@ -546,6 +547,11 @@ namespace Chapter.Command
                 _bikeController.ResetPosition();
                 _isRecording = false;
             }
+
+            if (GUILayout.Button("Heal Bike"))
+    {
+        _invoker.ExecuteCommand(_healCommand);
+    }
 
             if (!_isRecording)
             {
@@ -810,3 +816,5 @@ namespace Chapter.Strategy {
         }
     }
 }
+
+
