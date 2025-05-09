@@ -1,5 +1,4 @@
-{
-    public class ShieldItemManager : MonoBehaviour
+public class ShieldItemManager : MonoBehaviour
     {
         public GameObject shieldItemPrefab; 
         public float spawnInterval = 5f;  
@@ -18,4 +17,3 @@
             Instantiate(shieldItemPrefab, spawnPosition, Quaternion.identity);  
         }
     }
-}

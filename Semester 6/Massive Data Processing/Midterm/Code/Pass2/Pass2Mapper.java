@@ -7,8 +7,7 @@ import org.apache.hadoop.fs.Path;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Pass2Mapper extends Mapper<LongWritable, Text, Text, IntWritable> {
     private final static IntWritable one = new IntWritable(1);
@@ -16,9 +15,7 @@ public class Pass2Mapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
-
         Path path = new Path("/user/midterm/output1/part-r-00000");
-
         FileSystem fs = FileSystem.get(context.getConfiguration());
         FSDataInputStream inputStream = fs.open(path);
         BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
@@ -27,7 +24,7 @@ public class Pass2Mapper extends Mapper<LongWritable, Text, Text, IntWritable> {
         while ((line = reader.readLine()) != null) {
             String[] parts = line.split("\t");
             if (parts.length == 2) {
-                frequentCustomers.add(parts[0]); // ✅ Lưu khách hàng phổ biến vào tập hợp
+                frequentCustomers.add(parts[0]);
             }
         }
         reader.close();
@@ -35,6 +32,10 @@ public class Pass2Mapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        if (key.get() == 0 && value.toString().contains("Member_number")) {
+            return;
+        }
+
         String[] fields = value.toString().split(",");
         if (fields.length < 2)
             return;
@@ -42,15 +43,8 @@ public class Pass2Mapper extends Mapper<LongWritable, Text, Text, IntWritable> {
         String customer = fields[0];
         String date = fields[1];
 
-        // ✅ Chỉ xử lý nếu khách hàng nằm trong tập phổ biến
         if (frequentCustomers.contains(customer)) {
-            for (String other : frequentCustomers) {
-                if (!customer.equals(other)) {
-                    // ✅ Tạo cặp và xuất ra key-value
-                    String pair = customer + "," + other;
-                    context.write(new Text(pair), one);
-                }
-            }
+            context.write(new Text(date), new Text(customer));
         }
     }
 }

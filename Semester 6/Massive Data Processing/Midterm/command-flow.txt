@@ -1,0 +1,66 @@
+Download/baskets.csv
+Desktop/midterm : lưu mã nguồn
+
+---------------------------------------------------- 
+
+1. Format namenode 
+bin/hdfs namenode -format
+
+2. Start dfs
+sbin/start-dfs.sh
+
+3. Start yarn
+sbin/start-yarn.sh
+
+4. Tạo thư mục trên Hadoop
+bin/hdfs dfs -mkdir /user
+
+bin/hdfs dfs -mkdir /user/midterm
+
+5. Tải data lên Hadoop
+bin/hdfs dfs -put ~/Downloads/baskets.csv /user/midterm
+
+6. Chuyển tới thư mục midterm lưu mã source code 
+cd ~/Desktop/midterm
+
+Tạo folder output1 
+mkdir output1
+
+7. Biên dịch các class của Pass 1
+javac -classpath $(hadoop classpath) -d output1 Pass1Mapper.java Pass1Reducer.java Pass1Driver.java
+
+8. Chuyển tới thư mục chứa các file đã biên dịch
+cd ~/Desktop/midterm/output1
+
+9. Tạo tệp jar để đóng gói
+jar -cvf apriori.jar *
+
+10. Chuyển về thư mục Hadoop
+cd $HADOOP_HOME
+
+11. Chạy trên Hadoop
+bin/hadoop jar ~/Desktop/midterm/output1/apriori.jar Pass1Driver /user/midterm/baskets.csv /user/midterm/output1
+Done Pass 1
+
+
+12. Chuyển về thư mục lưu mã nguồn Pass 2
+cd ~/Desktop/midterm
+
+13. Tạo thư mục output2
+mkdir output2
+
+14. Biên dịch các tệp của Pass 2
+javac -classpath $(hadoop classpath) -d output2 Pass2Mapper.java Pass2Reducer.java Pass2Driver.java
+
+15. Chuyển đên thư mục ouput2
+cd output2
+
+16. Tạo tệp Jar cho Pass 2
+jar -cvf apriori_pass2.jar *
+
+17. Chuyển về thư mục Hadoop
+cd $HADOOP_HOME
+
+18. Chạy pass 2 trên Hadoop
+bin/hadoop jar ~/Desktop/midterm/output2/apriori_pass2.jar Pass2Driver /user/midterm/baskets.csv /user/midterm/output2/part-r-00000 /user/midterm/output2
+

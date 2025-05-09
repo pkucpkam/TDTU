@@ -1,3 +1,4 @@
+namespace Chapter.Strategy
 public class AbsoluteShield : IShieldBehaviour
 {
     public float AbsorbDamage(float damage)

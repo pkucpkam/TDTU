@@ -1,0 +1,7 @@
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\bin\Debug\Exercise01.exe.config
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\bin\Debug\Exercise01.exe
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\bin\Debug\Exercise01.pdb
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\obj\Debug\Exercise01.csproj.AssemblyReference.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\obj\Debug\Exercise01.csproj.CoreCompileInputs.cache
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\obj\Debug\Exercise01.exe
+F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise01\Exercise01\Exercise01\obj\Debug\Exercise01.pdb

@@ -1,4 +1,6 @@
 using UnityEngine;
+namespace Chapter.Strategy
+
 {
     public class ShieldItem : MonoBehaviour
     {
