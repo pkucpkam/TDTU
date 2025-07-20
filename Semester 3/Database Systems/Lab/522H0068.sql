@@ -1,0 +1,210 @@
+﻿use master
+go
+create database ql
+go
+
+-- tao cac bang
+
+CREATE TABLE KHACHHANG1 (
+    MaKH VARCHAR(20) PRIMARY KEY,
+    TenKH VARCHAR(255),
+    DiaChi VARCHAR(255),
+    SoDT VARCHAR(15)
+);
+
+CREATE TABLE HANGHOA (
+    MaHH VARCHAR(20) PRIMARY KEY,
+    TenHH VARCHAR(255),
+    DonGia DECIMAL(10, 2)
+);
+
+CREATE TABLE DONHANG (
+    SoDH VARCHAR(20) PRIMARY KEY,
+    MaKH VARCHAR(20),
+    NgayDatHang DATE,
+    FOREIGN KEY (MaKH) REFERENCES KHACHHANG1(MaKH)
+);
+CREATE TABLE CHITIETDONHANG (
+    SoDH VARCHAR(20),
+    MaHH VARCHAR(20),
+    SoLuong INT CHECK (SoLuong > 0),
+    PRIMARY KEY (SoDH, MaHH),
+    FOREIGN KEY (SoDH) REFERENCES DONHANG(SoDH),
+    FOREIGN KEY (MaHH) REFERENCES HANGHOA(MaHH),
+);
+
+
+--them du lieu vao bang
+
+INSERT INTO KHACHHANG1 (MaKH, TenKH, DiaChi, SoDT) 
+	VALUES ('KH01', 'MAI VAN BAO', '12 LE LOI', '8900123')
+INSERT INTO KHACHHANG1 (MaKH, TenKH, DiaChi, SoDT) 
+	VALUES ('KH02', 'LE LAN', '34 LE LAI', '8976543')
+INSERT INTO KHACHHANG1 (MaKH, TenKH, DiaChi, SoDT) 
+	VALUES ('KH03', 'LE TUAN', '123 TRAN PHU', '8767854')
+
+INSERT INTO HANGHOA(MaHH, TenHH, DonGia) 
+	VALUES ('MG02', 'MAY GIAT SAMSUNG', 35)
+INSERT INTO HANGHOA(MaHH, TenHH, DonGia) 
+	VALUES ('TL01', 'TU LANH HITACHI', 20)
+INSERT INTO HANGHOA(MaHH, TenHH, DonGia) 
+	VALUES ('TV03', 'TV SONY', 40)
+INSERT INTO HANGHOA(MaHH, TenHH, DonGia) 
+	VALUES ('TV04', 'TV LG', 28)
+INSERT INTO HANGHOA(MaHH, TenHH, DonGia) 
+	VALUES ('TV05', 'TV 21 SAMSUNG', 20)
+
+
+-- Thêm dữ liệu vào bảng DONHANG
+INSERT INTO DONHANG (SoDH, MaKH, NgayDatHang) VALUES
+('DH01', 'KH01', '2012-12-19'),
+('DH02', 'KH01', '2012-12-20'),
+('DH03', 'KH02', '2012-12-21'),
+('DH04', 'KH02', '2013-01-03'),
+('DH05', 'KH03', '2013-01-04');
+
+
+-- Thêm dữ liệu vào bảng CHITIETDONHANG
+INSERT INTO CHITIETDONHANG (SoDH, MaHH, SoLuong) VALUES
+('DH01', 'MG02', 4),
+('DH01', 'TL01', 3),
+('DH01', 'TV03', 2),
+('DH02', 'MG02', 5),
+('DH02', 'TL01', 10),
+('DH03', 'TV03', 3),
+('DH03', 'TV04', 5),
+('DH04', 'TV05', 4),
+('DH04', 'MG02', 4);
+
+
+--BAI LAM
+
+SELECT DH.SoDH, DH.NgayDatHang
+FROM DONHANG DH
+INNER JOIN CHITIETDONHANG CT ON DH.SoDH = CT.SoDH
+WHERE CT.SoLuong >= 5;
+
+
+SELECT SoDH, NgayDatHang
+FROM DONHANG
+WHERE NgayDatHang BETWEEN '2012-12-01' AND '2012-12-01';
+
+
+SELECT * FROM HANGHOA HH
+INNER JOIN CHITIETDONHANG CT ON HH.MaHH = CT.MaHH
+INNER JOIN DONHANG DH ON CT.SoDH = DH.SoDH
+WHERE CT.MaHH LIKE 'TV%' AND MONTH(DH.NgayDatHang) = 1
+
+
+SELECT CT.MaHH, SUM(CT.SoLuong * HH.DonGia) AS TongThanhTien
+FROM CHITIETDONHANG CT
+INNER JOIN HANGHOA HH ON CT.MaHH = HH.MaHH
+GROUP BY CT.MaHH;
+
+SELECT SUM(SoLuong) AS TongSoLuong
+FROM CHITIETDONHANG
+WHERE SoDH = 'DH02';
+
+SELECT TOP 1 KH.MaKH, KH.TenKH, MAX(DH.NgayDatHang) AS NgayDatHangGanNhat
+FROM KHACHHANG1 KH
+INNER JOIN DONHANG DH ON KH.MaKH = DH.MaKH
+GROUP BY KH.MaKH, KH.TenKH
+ORDER BY NgayDatHangGanNhat DESC;
+
+-- 3
+-- Tạo function
+CREATE FUNCTION dbo.LietKeThongTinMatHang()
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT KH.MaKH, HH.TenHH, CT.SoLuong, HH.DonGia, CT.SoLuong * HH.DonGia AS ThanhTien
+    FROM KHACHHANG1 KH
+    JOIN DONHANG DH ON KH.MaKH = DH.MaKH
+    JOIN CHITIETDONHANG CT ON DH.SoDH = CT.SoDH
+    JOIN HANGHOA HH ON CT.MaHH = HH.MaHH
+    WHERE CT.SoLuong >= 4
+);
+
+-- Sử dụng function
+SELECT * FROM dbo.LietKeThongTinMatHang();
+
+
+-- Tạo function
+CREATE FUNCTION dbo.LayMaKhachHangMoi()
+RETURNS VARCHAR(20)
+AS
+BEGIN
+    DECLARE @MaKhachHangMoi VARCHAR(20);
+    
+    SELECT TOP 1 @MaKhachHangMoi = 'KH' + RIGHT('00' + CAST(CONVERT(INT, SUBSTRING(MaKH, 3, LEN(MaKH))) + 1 AS VARCHAR), 2)
+    FROM KHACHHANG1
+    ORDER BY MaKH DESC;
+
+    IF @MaKhachHangMoi IS NULL
+        SET @MaKhachHangMoi = 'KH01';
+
+    RETURN @MaKhachHangMoi;
+END;
+
+-- Sử dụng function
+DECLARE @MaMoi VARCHAR(20);
+SET @MaMoi = dbo.LayMaKhachHangMoi();
+PRINT @MaMoi;
+
+--4
+-- Tạo stored procedure
+CREATE PROCEDURE TinhTongSoLuongBanRa
+AS
+BEGIN
+    SELECT DH.SoDH, SUM(CT.SoLuong) AS TongSoLuong
+    FROM DONHANG DH
+    JOIN CHITIETDONHANG CT ON DH.SoDH = CT.SoDH
+    GROUP BY DH.SoDH;
+END;
+
+-- Gọi stored procedure
+EXEC TinhTongSoLuongBanRa;
+
+-- Tạo stored procedure
+CREATE PROCEDURE TinhTongThanhTienHoaDon
+    @MaHH VARCHAR(20)
+AS
+BEGIN
+    SELECT CT.MaHH, SUM(CT.SoLuong * HH.DonGia) AS TongThanhTien
+    FROM CHITIETDONHANG CT
+    JOIN HANGHOA HH ON CT.MaHH = HH.MaHH
+    WHERE CT.MaHH = @MaHH
+    GROUP BY CT.MaHH;
+END;
+
+-- Gọi stored procedure với tham số
+DECLARE @MaHangHoa VARCHAR(20) = 'MG02'; -- Thay 'MG02' bằng mã hàng hóa cần tính
+EXEC TinhTongThanhTienHoaDon @MaHangHoa;
+
+
+CREATE PROCEDURE ThemKhachHangVaLietKe
+    @TenKH VARCHAR(255),
+    @DiaChi VARCHAR(255),
+    @SoDT VARCHAR(15)
+AS
+BEGIN
+    DECLARE @MaKH VARCHAR(20);
+    
+    -- Gọi function để lấy mã số khách hàng mới
+    SET @MaKH = dbo.LayMaKhachHangMoi();
+
+    -- Thêm khách hàng mới
+    INSERT INTO KHACHHANG1 (MaKH, TenKH, DiaChi, SoDT) 
+    VALUES (@MaKH, @TenKH, @DiaChi, @SoDT);
+
+    -- Liệt kê thông tin khách hàng vừa thêm
+    SELECT *
+    FROM KHACHHANG1
+    WHERE MaKH = @MaKH;
+END;
+
+DECLARE @TenKhachHang VARCHAR(255) = 'Nguyen Van A'; 
+DECLARE @DiaChiMoi VARCHAR(255) = '123 Duong ABC'; 
+DECLARE @SoDienThoai VARCHAR(15) = '0123456789'; -- 
+EXEC ThemKhachHangVaLietKe @TenKhachHang, @DiaChiMoi, @SoDienThoai;
