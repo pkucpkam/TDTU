@@ -1,7 +1,0 @@
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\bin\Debug\Exercise02.exe.config
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\bin\Debug\Exercise02.exe
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\bin\Debug\Exercise02.pdb
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\obj\Debug\Exercise02.csproj.AssemblyReference.cache
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\obj\Debug\Exercise02.csproj.CoreCompileInputs.cache
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\obj\Debug\Exercise02.exe
-F:\TDTU\Github\TDTU\Semester 6\Design Pattern\Lab\522H0068_PhamVanPhuc_Lab08\Exercise02\Exercise02\Exercise02\obj\Debug\Exercise02.pdb
